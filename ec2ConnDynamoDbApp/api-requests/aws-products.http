@@ -1,0 +1,47 @@
+
+### Add a product
+POST http://ec2-65-2-73-91.ap-south-1.compute.amazonaws.com:8080/products
+Content-Type: application/json
+
+{
+    "id": "001",
+    "name": "Headphones",
+    "price": 2500.0
+}
+
+# Sample products
+#
+# {
+#    "id": "003",
+#    "name": "Smartphone",
+#    "price": 20000.0
+#  }
+#  {
+#    "id": "002",
+#    "name": "Keyboard",
+#    "price": 1200.0
+#  }
+#  {
+#    "id": "004",
+#    "name": "Mouse",
+#    "price": 800.0
+#  }
+
+### Get product
+GET http://ec2-65-2-73-91.ap-south-1.compute.amazonaws.com:8080/products/002
+
+### Get All Products
+GET http://ec2-65-2-73-91.ap-south-1.compute.amazonaws.com:8080/products
+
+### Update a product
+PUT http://ec2-65-2-73-91.ap-south-1.compute.amazonaws.com:8080/products
+Content-Type: application/json
+
+{
+    "id": "001",
+    "name": "Headphones",
+    "price": 250.0
+}
+
+### Delete a product
+DELETE http://ec2-65-2-73-91.ap-south-1.compute.amazonaws.com:8080/products/003
